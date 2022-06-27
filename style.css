@@ -1,0 +1,487 @@
+:root {
+  /*color palate from: https://www.materialpalette.com/indigo/pink*/
+  --dark-primary-color: #303f9f;
+  --primary-color: rgb(64, 81, 181);
+  --light-primary-color: #c5cae9;
+  --text-icon-color: #ffffff;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --divider-color: #bdbdbd;
+  --accent-color: #ff4081;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* For smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+/* body styling */
+body {
+  font-family: "Raleway", "sans-serif";
+  color: var(--text-icon-color);
+  box-sizing: border-box;
+}
+/* page start */
+.hero {
+  background: linear-gradient(rgba(34, 42, 49, 0.822), rgba(34, 42, 49, 0.822)),
+    url(https://dl.dropboxusercontent.com/s/qery1jsxvtfsq51/cover_desktop.jpg?dl=0)
+      no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  font-size: 1.5em;
+  font-family: Reenie Beanie, cursive;
+  text-align: center;
+}
+.hero .inside-hero {
+  position: relative;
+  top: 25vh;
+}
+.inside-hero .name {
+  font-size: 5.5em;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+.inside-hero h2 {
+  font-size: 2em;
+}
+.inside-hero p {
+  margin-top: 7em;
+  font-family: "Raleway", "sans-serif";
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.inside-hero .scrollBtn .fas {
+  font-size: 1.5em;
+  padding-top: 20px;
+  color: var(--accent-color);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+/* container to center lower part */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* about Ms */
+.info {
+  margin-top: 20px;
+  color: var(--secondary-text-color);
+  display: flex;
+  flex-wrap: wrap;
+}
+.info .aboutMS {
+  width: calc((100% - 20px) / 2);
+  margin-right: 10px;
+  line-height: 1.5em;
+  font-size: 18px;
+}
+
+.info h2 {
+  text-align: center;
+  font-weight: 100;
+  color: var(--primary-color);
+  padding: 10px;
+}
+.info img {
+  width: 48%;
+  border: 2px solid var(--divider-color);
+  border-radius: 10px;
+  padding: 3px;
+}
+
+/* highlight line */
+.hrHighlight {
+  margin-top: 0;
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgb(255, 64, 129),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+/* table edit */
+
+.infoInTable {
+  display: flex;
+  margin-top: 2em;
+  max-width: 80%;
+}
+
+.infoInTable .tableAbout {
+  background-color: var(--dark-primary-color);
+  color: var(--text-icon-color);
+  text-align: center;
+  padding: 3px;
+  font-size: 1.3em;
+  text-transform: capitalize;
+}
+
+.infoInTable table {
+  border-collapse: collapse;
+  color: var(--primary-text-color);
+  width: 39vw;
+  margin-right: 1em;
+  margin-bottom: 2em;
+}
+table tr th {
+  color: var(--primary-text-color);
+  font-size: 1em;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: start;
+  padding: 10px 0 10px 0;
+}
+
+table tr td {
+  color: var(--secondary-text-color);
+  font-size: 1em;
+  text-transform: capitalize;
+  padding: 10px 0 10px 0;
+}
+.infoInTable table tr {
+  border-bottom: 0.5px solid var(--divider-color);
+}
+.infoInTable table tr:last-child {
+  border-bottom: none;
+}
+.infoInTable table tr:hover {
+  background-color: var(--light-primary-color);
+}
+.infoInTable tfoot {
+  text-align: end;
+  border-top: 0.5px solid var(--divider-color);
+  font-size: 1.2em;
+}
+.infoInTable tfoot a {
+  text-decoration: none;
+}
+.infoInTable tfoot a:hover {
+  color: var(--accent-color);
+}
+
+.dhoniImage {
+  width: 100%;
+  height: 100vh;
+  background: url(https://dl.dropboxusercontent.com/s/8nipacmh6r739wr/cover_desktop_2.jpg?dl=0)
+    no-repeat center center fixed;
+  background-size: cover;
+}
+/* Dhoni All Details */
+.container2 {
+  width: 60%;
+  margin: 0 auto;
+}
+.dhoniAllDetails {
+  color: var(--primary-text-color);
+}
+.dhoniAllDetails h3 {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 100;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+.dhoniAllDetails ul {
+  margin-top: 20px;
+}
+.dhoniAllDetails ul li {
+  color: var(--secondary-text-color);
+  line-height: 2em;
+  font-size: 1.2em;
+}
+strong {
+  color: var(--primary-text-color);
+}
+.tweet {
+  /* background-color: var(--divider-color); */
+  border-left: 8px solid var(--divider-color);
+  padding: 15px;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+.dhoni-appreciation {
+  color: var(--secondary-text-color);
+}
+.shortLine {
+  display: none;
+}
+.longLine {
+  display: block;
+}
+
+/* MS Movie */
+.dhoniAllDetails .moreAboutMs {
+  margin-top: 20px;
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+.moreAboutMs a {
+  text-decoration: none;
+  color: #337ab7;
+}
+.moreAboutMs a:hover {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+/* normal HR */
+.normalHr {
+  margin-top: 20px;
+  height: 1px;
+  color: var(--primary-text-color);
+}
+/* buttons */
+.more {
+  margin: 25px;
+  text-align: center;
+}
+.more a {
+  text-decoration: none;
+}
+.more button {
+  border: none;
+  background-color: #337ab7;
+  color: white;
+  font-size: 1.1em;
+  padding: 15px;
+  margin-right: 30px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.more button:hover {
+  background-color: #303f9f;
+}
+.more p {
+  font-size: 1.3em;
+  color: var(--primary-text-color);
+}
+.more p a {
+  text-decoration: none;
+  color: #337ab7;
+}
+.more p a:hover {
+  color: var(--accent-color);
+}
+/* Social Media */
+
+.socialMediaLike {
+  color: var(--dark-primary-color);
+  font-weight: 100;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 10px;
+}
+
+.indFinal2k11 {
+  color: var(--primary-text-color);
+  width: 60%;
+  margin: 20px auto;
+  border-left: 5px solid var(--divider-color);
+  padding: 12px;
+  line-height: 1.4em;
+}
+
+.indFinal2k11 a {
+  text-decoration: none;
+  color: #303f9f;
+}
+.indFinal2k11 a:hover {
+  color: var(--accent-color);
+}
+
+/* responsive Page Start */
+
+@media screen and (max-width: 400px) {
+  .hero {
+    background: linear-gradient(
+        rgba(34, 42, 49, 0.822),
+        rgba(34, 42, 49, 0.822)
+      ),
+      url(https://dl.dropboxusercontent.com/s/dfynkdansigr6u7/cover_mobile.jpg?dl=0)
+        no-repeat center center fixed;
+    background-size: cover;
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .info img {
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+  }
+  .info hr {
+    margin-bottom: 20px;
+  }
+  .info .aboutMS {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .infoInTable {
+    flex-direction: column;
+  }
+  .infoInTable table {
+    font-size: 1.1em;
+    width: 80vw;
+  }
+  table tr td {
+    padding: 10px 180px;
+  }
+  .dhoniImage {
+    background: url(https://dl.dropboxusercontent.com/s/s5fnipk6tnh7e35/cover_mobile_2.jpg?dl=0)
+      no-repeat center center fixed;
+    background-size: cover;
+  }
+  .container2 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .more button {
+    margin-right: 0;
+    width: 100%;
+  }
+  .more p {
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 830px) {
+  .info img {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+  }
+  .info hr {
+    margin-bottom: 20px;
+  }
+  .container {
+    width: 90%;
+  }
+  .info .aboutMS {
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+  .infoInTable {
+    flex-direction: column;
+  }
+  .infoInTable table {
+    font-size: 1.1em;
+    width: 90vw;
+  }
+  table tr td {
+    padding: 10px 10px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .info img {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+  }
+  .info hr {
+    margin-bottom: 20px;
+  }
+  .container {
+    width: 95%;
+  }
+  .info .aboutMS {
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+  .infoInTable {
+    flex-direction: column;
+  }
+  .infoInTable table {
+    font-size: 1.1em;
+    width: 95vw;
+  }
+  table tr td {
+    padding: 10px 10px;
+  }
+  .dhoniAllDetails ul li {
+    font-size: 1em;
+    line-height: 1.4em;
+  }
+  .dhoniAllDetails .moreAboutMs {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 1580px) {
+  .inside-hero p {
+    margin-top: 10em;
+  }
+
+  .hero {
+    margin: 0 auto;
+  }
+  .info img {
+    width: 38%;
+    /* height: 80%; */
+  }
+
+  .info .aboutMS {
+    font-size: 16px;
+    line-height: 1.6em;
+    width: 50%;
+  }
+
+  .infoInTable table {
+    font-size: 1.1em;
+    width: 38vw;
+  }
+}
+@media screen and (max-width: 770px) {
+  .shortLine {
+    display: block;
+  }
+  .longLine {
+    display: none;
+  }
+}
+@media screen and (min-width: 770px) {
+  .shortLine {
+    display: none;
+  }
+  .longLine {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .inside-hero p {
+    margin-top: 5.8em;
+    font-size: 20px;
+  }
+  .inside-hero .name {
+    font-size: 4em;
+  }
+}
